@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    color: #222;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     user-select: none;
 }
 
@@ -12,12 +15,13 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 header{
     height: 10vh;
     width: 100%;
-    background-color: #fff;
+    background-color: #050518;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +32,9 @@ header{
 header div{
     text-align: end;
 }
+.logo{
+    height: 10vh;
+}
 
 header div .hour{
     font-size: 2em;
@@ -36,7 +43,7 @@ header div .hour{
 .container{
     flex: 1;
     width: 100%;
-    background-color: #002266;
+    background-color: #02023e;
     color: #fff;
     display: flex;
     align-items: center;
@@ -50,8 +57,9 @@ header div .hour{
     top:10%;
 }
 
-
-
+.lyris{
+    color: #fff;
+}
 
 .box{
     width: 70%;
@@ -72,7 +80,7 @@ header div .hour{
     grid-template-rows: repeat(3,1fr);
     gap: 20px;
     padding: 20px;
-
+    color: rgb(0, 0, 0);
 }
 
 .box .numbers div{
@@ -83,6 +91,7 @@ header div .hour{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .box .numbers div:hover{
@@ -104,6 +113,7 @@ header div .hour{
     justify-content: start;
     align-items: center;
     width: 100%;
+    font-weight: bold;
 }
 .saldo{
     font-size: 1.5em;
@@ -120,23 +130,26 @@ header div .hour{
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    color: #111;
+    color: rgb(0, 0, 0);
     font-size: 1.5em;
     transition: .2s;
+    border-radius: 10px;
 }
 
 .box .retirar .btnBox .btn1{
     flex: 2;
 }
 .box .retirar .btnBox .btn1:hover{
-    background-color: #1f1;
+    background-color: #333cc4;
+    color: #fff;
 }
 .box .retirar .btnBox .btn2{
     flex: 1;
 
 }
 .box .retirar .btnBox .btn2:hover{
-   background-color: #f11;
+   background-color: rgb(90, 14, 14);
+   color: #fff;
 
 }
 

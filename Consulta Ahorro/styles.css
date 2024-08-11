@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    color: #222;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     user-select: none;
 }
 
@@ -12,12 +15,13 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 header{
     height: 10vh;
     width: 100%;
-    background-color: #fff;
+    background-color: #050518;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +32,9 @@ header{
 header div{
     text-align: end;
 }
+.logo{
+    height: 10vh;
+}
 
 header div .hour{
     font-size: 2em;
@@ -36,7 +43,7 @@ header div .hour{
 .container{
     flex: 1;
     width: 100%;
-    background-color: #002266;
+    background-color: #02023e;
     color: #fff;
     display: flex;
     align-items: center;
@@ -64,18 +71,20 @@ header div .hour{
 }
 
 .btnBox div{
-    color: #111;
-    width: 45%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
-    transition: .2s;
+    height: 8vh;
+    width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
 }
 .btnBox div:hover{
     cursor: pointer;
-    background-color: #00aaee;
+    background-color: #333cc4;
+    color: #fff;
 }
 
 .container div span{
@@ -104,4 +113,27 @@ header div .hour{
         transform: scale(1);
         opacity: 1;
     }
+}
+
+.logout{
+    display: flex;
+    padding: 20px;
+    background-color: #f11;
+    color: #fff;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    gap: 10px;
+    border-radius: 10px;
+}
+.logout:hover{
+    cursor: pointer;
+    background-color: #b11;
+}
+.logout img{
+    width: 20px;
+    height: 20px;
+}
+.logout div{
+    color: #fff;
 }
